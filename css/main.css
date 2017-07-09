@@ -52,7 +52,7 @@
 body,button{ margin:0;text-align: center;padding-top:10%;background-color:darkcyan;color:white; font-family: 'Annie Use Your Telescope', cursive;}
  footer{ padding-top:200px;} .fa{color:white;}
 p{font-size:30px;}h1{font-size:60px;}
-#option{padding-top:80px;} .panel{border:1px solid white;background-color:lightgrey; padding-bottom:5px;} .panel-body h3, panel-body p{color:black;} 
+#option{padding-top:80px;} .panel{border:1px solid white;background-color:white; padding-bottom:5px;} .panel-body{border-top:1px solid black;}.panel-body h3, panel-body p{color:black;} 
 .pin{padding-top:10px;}.tag{background-color:black;color:white; font-size: 15px;border-radius:3px;padding-left:3px;padding-right:3px;}
   //  .tag-css{background-color:darkblue;}
     .moreBtn a{font-size:15px;padding:0px;}#blogLink{text-decoration:none;color:white;}
