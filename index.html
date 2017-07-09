@@ -1,110 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-<head><title>SOPHANNA EK</title>
-    <meta charset="UTF-8">
+<html>
+<head>
+<meta charset="UTF-8">
     <!-- tell what internet explorer version this website support -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--link to bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel='stylesheet' href='css/main.css'>
-    <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body{text-align: center;font-family: 'Annie Use Your Telescope', cursive;background-color: darkcyan;}
-        .navbar-header,.collapse{background-color: white;}
-        h1{color:white;margin-top:20%;text-align-last: center;font-family: 'Annie Use Your Telescope', cursive;font-size: 90px;}
-        #profilePic{border-radius: 50%;width:300px; height:300px;margin-top:75px;}
-        .right{padding-bottom: 75px;}
-        .fa {color:white;}
-        .jumbotron{margin-bottom:1px;}
-        .main{margin-bottom: 0;}
-        .nav-button{margin-bottom:20px;margin-top:20%;}
-        .footer,.nav-button{padding-top:30px;}
-        li{text-align: center;}
-        .dropdown-menu{margin-left: 42%;}
-        .badge-success {
-  background-color: #468847;
-}.badge-info {
-  background-color: #3a87ad;
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<link rel='stylesheet' href='css/main.css'>
+<link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+   // background-color: rgb(0,0,0);
+    background-color:#F8F9F9;
+  // background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
 }
-a{color:white;}
-    </style>
+
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+  //  text-align: center;
+    margin-top: 0px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+body,button{ margin:0;text-align: center;padding-top:10%;background-color:darkcyan;color:white; font-family: 'Annie Use Your Telescope', cursive;}
+ footer{ padding-top:200px;} .fa{color:white;}
+p{font-size:30px;}h1{font-size:60px;}
+#option{padding-top:80px;} .panel{border:1px solid white;background-color:white; padding-bottom:5px;} .panel-body h3, panel-body p{color:black;} 
+.pin{padding-top:10px;}.tag{background-color:black;color:white; font-size: 15px;border-radius:3px;padding-left:3px;padding-right:3px;}
+  //  .tag-css{background-color:darkblue;}
+    .moreBtn a{font-size:15px;padding:0px;}#blogLink{text-decoration:none;color:white;}
+</style>
 </head>
 <body>
-<div class='container main'>
-    <div class='row'>
-        <section class='col-sm-8 col-md-6 col-lg-6 left'>
-            <img src='me.png' id='profilePic'>
-        </section>
-        <section class='col-sm-8 col-md-6 col-lg-6 right'>
-            <h1>Hi, I am Sophanna</h1>
-        <p><span style='color:white;font-size:40px'>&lt;/ Full Stack Developer&gt;</span></p>
-        </section>
+<!-- HomePage --> 
+<div class="container">
+    <h1>Hi, I am Sophanna</h1>
+    <p>Dreamer, creator, adventurer, engineer, developer.</p>
+  <!--  <p><span style='color:white;font-size:40px'>&lt;/ Full Stack Developer&gt;</span></p> -->
+    ----****------****------****------****------****------****----<br>
     </div>
-<div class='container nav-button dropdown'>
- <button class='btn btn-default dropdown-toggle' type='button' data-toggle='dropdown'>PORFOLIO
-     <span class='caret'></span></button>
-    <ul class='dropdown-menu'>
-        <li onClick='showDiv()'>Web Design</li>
-        <li><a href='#'>ChemE</a></li>
-    </ul>
- <button class='btn btn-default'>BLOG</button>
-    </div></div>
-<!-- list of Web Design Projects -->
-<div class='jumbotron' id='myDIV' hidden>
-    <div class='row'>
-        <section class="pin col-sm-8 col-md-6 col-lg-4">
-            <div class='panel panel-default'>
-                <div class='panel-heading'>
-                        <img src='image/Screenshot%202017-06-24%2010.24.47.png' width='85%' height='85%'>
-                </div>
-                <div class='panel-body'>
-                    <h3>Math PocketBook <span class="badge">HTML</span> <span class="badge badge-info">CSS</span> <span class="badge badge-success">Bootstrap</span> <button class='btn btn-warning moreBtn' data-toggle='modal' data-target='#Recipe'><a href='../math/math.html'>See More &raquo;</a></button></h3>
-                </div>
-            </div></section>
-        <section class="pin col-sm-8 col-md-6 col-lg-4">
-            <div class='panel panel-default'>
-                <div class='panel-heading'>
-                        <img src='image/Screenshot 2017-06-29 13.11.00.png' width='100%' height='45%'>
-                </div>
-                <div class='panel-body'>
-                    <h3>Restaurant Menu Online Order Form <span class="badge">HTML</span> <span class="badge badge-info">CSS</span> <span class="badge badge-success">Bootstrap</span>  <span class="badge badge-success">JavaScript</span> <button class='btn btn-warning moreBtn' data-toggle='modal' data-target='#Recipe'><a href='../MenuCalc.html'>See More &raquo;</a></button></h3>
-                </div>
-            </div></section>
-        <section class="pin col-sm-8 col-md-6 col-lg-4">
-            <div class='panel panel-default'>
-                <div class='panel-heading'>
-                        <img src='image/IMG_8015.JPG'><p>heytehere how areyouheytehere how areyouheytehere how areyouheytehere how areyouheytehere how areyouheytehere how areyouheytehere how areyouheytehere how areyouheytehere how areyouheytehere how areyouheytehere how areyouheytehere how areyou </p>
-                    
-                </div>
-                <div class='panel-body'>
-                    <h3>GalzCloset <span class="badge">HTML</span> <span class="badge">CSS</span> <span class="badge">JavaScript</span> <span class="badge">PHP</span> <button class='btn btn-warning moreBtn' data-toggle='modal' data-target='#Recipe'><a href='../math/math.html'>See More &raquo; </a></button></h3>
-                </div>
-            </div>
-            <div class='panel panel-default'>
-                <div class='panel-heading'>
-                        <img src='image/IMG_8015.JPG'><p>heytehere how areyouheytehere how areyouheytehere how areyouheytehere how areyouheytehere how areyouheytehere how areyouheytehere how areyouheytehere how areyouheytehere how areyouheytehere how areyouheytehere how areyouheytehere how areyou </p>
-                    
-                </div>
-                <div class='panel-body'>
-                    <h3>GalzCloset <span class="badge">HTML</span> <span class="badge">CSS</span> <span class="badge">JavaScript</span> <span class="badge">PHP</span> <button class='btn btn-warning moreBtn' data-toggle='modal' data-target='#Recipe'><a href='../math/math.html'>See More &raquo; </a></button></h3>
-                </div>
-            </div>
-        </section>
-         <section class="pin col-sm-8 col-md-6 col-lg-4">
-            <div class='panel panel-default'>
-                <div class='panel-heading'>
-                        <img src='image/IMG_8015.JPG'>
-                    <img src='image/Screenshot%202017-06-24%2010.24.47.png'><img src='image/Screenshot%202017-06-24%2010.24.47.png'>
-                   
-                </div>
-                <div class='panel-body'>
-                        <h3>Mini Calculator <span class="badge">HTML</span> <span class="badge">CSS</span> <span class="badge">JavaScript</span> <span class="badge">PHP</span> <button class='btn btn-warning moreBtn' data-toggle='modal' data-target='#Recipe'>See More &raquo;</button></h3>
-                </div>
-            </div>
-        </section>       
-</div>
+<div class='container' id="option">
+ <!--   <p>Welcome to my personal website</p> -->
+<button type="button" class="btn btn-outline-secondary">
+    <span onclick="openNav()" id="blogLink">PORFOLIO</span></button>
+    <button type='button' class='btn btn-outline-secondary'><a href="http://iknowplazes.blogspot.com" id="blogLink">BLOG</a></button>
 </div>
 <footer class="container footer">
         <a href="https://www.facebook.com"><i class="fa fa-facebook-square fa-2x social"></i></a>
@@ -113,18 +94,68 @@ a{color:white;}
         <a href="mailto:sophanna.ek@gmail.com"><i class="fa fa-envelope-square fa-2x social"></i></a>
         <p>&copy; 2017 Sophanna</p>	
 </footer>
+ 
+<!--- slide navigation --> 
+<div id="myNav" class="overlay">
+<a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a> 
+  <div class="overlay-content">
+    
+<!-- porfolio content  -->
+ <div class='row'>   
+       <section class="pin col-sm-8 col-md-5 col-lg-4">
+            <div class='panel panel-warning'>
+                <div class='panel-heading'>
+                <img src="beachImage.jpeg" width="100%">
+                    
+                </div>
+                <div class='panel-body'>
+                    <h3>MathWithSophie</h3>
+                    <span class='tag'>HTML</span>
+                    <span class='tag tag-css'>CSS</span>
+                    <span class='tag'>JavaScript</span>
+                    <span class='tag'>PHP</span>
+                    <button class='btn btn-warning moreBtn' data-toggle='modal' data-target='#Recipe'><a href='../math/math.html'>See More &raquo; </a></button>
+                </div>
+           </div>
+        </section>
+      <section class="pin col-sm-8 col-md-5 col-lg-4">
+            <div class='panel panel-warning'>
+                <div class='panel-heading'>
+                <img src="beachImage.jpeg" width="100%">
+                    
+                </div>
+                <div class='panel-body'>
+                    <h3>Galz Closet </h3><span class="tag">HTML</span> <span class="tag">CSS</span> <span class="tag">JavaScript</span> <span class="tag">PHP</span> <button class='btn btn-warning moreBtn' data-toggle='modal' data-target='#Recipe'><a href='../math/math.html'>See More &raquo; </a></button>
+                </div>
+           </div>
+        </section>
+      <section class="pin col-sm-8 col-md-5 col-lg-4">
+            <div class='panel panel-warning'>
+                <div class='panel-heading'>
+                <img src="beachImage.jpeg" width="100%">
+                    
+                </div>
+                <div class='panel-body'>
+                    <h3>Menu Calculator </h3>
+                    <span class="tag">HTML</span> 
+                    <span class="tag">CSS</span> 
+                    <span class="tag">JavaScript</span> 
+                    <button class='btn btn-warning moreBtn' data-toggle='modal' data-target='#Recipe'><a href='../math/math.html'>See More &raquo; </a></button>
+                </div>
+           </div>
+        </section>
+     </div>  
+  </div>
+</div>
 <script>
-function showDiv() {
-    var x = document.getElementById('myDIV');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
 }
 </script>
+     
 </body>
-    
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </html>
